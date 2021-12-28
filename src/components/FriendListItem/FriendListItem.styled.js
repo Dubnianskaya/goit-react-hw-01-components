@@ -10,8 +10,8 @@ export const FriendsItem = styled.li`
   justify-content: center;
 `;
 
-const setOnlineColor = props => {
-  return props.isOnline ? '#00FF00' : '#FF0000';
+const setOnlineColor = ({ isOnline, theme }) => {
+  return isOnline ? theme.colors.green : theme.colors.red;
 };
 
 export const Status = styled.span`
@@ -22,11 +22,11 @@ export const Status = styled.span`
 
 export const Avatar = styled.img`
   border-radius: 25%;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const FriendName = styled.p`
   font-size: 24px;
   font-weight: 500;
-  color: #ffffff;
+  color: ${props => props.theme.colors.white};
 `;

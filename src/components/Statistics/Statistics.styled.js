@@ -9,14 +9,13 @@ export const StatisticTitle = styled.h2`
   margin: 15px 0;
   font-size: 40px;
   font-weight: 700;
-  color: #ffffff;
+  color: ${props => props.theme.colors.white};
 `;
 
 export const StatisticList = styled.ul`
-  list-style: none;
-  padding: 0;
   display: flex;
   width: 600px;
+  margin-bottom: 15px;
 `;
 
 export const StatisticItem = styled.li`
@@ -28,13 +27,12 @@ export const Label = styled.span`
   display: block;
   font-size: 36px;
   font-weight: 500;
-  background-color: rgb(145, 157, 207);
+  background-color: ${props => props.theme.colors.blue};
 `;
 
 export const Percentage = styled.span`
-  margin-bottom: 15px;
   display: block;
   font-size: 36px;
   font-weight: 700;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.white};
 `;

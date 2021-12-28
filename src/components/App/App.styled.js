@@ -10,5 +10,5 @@ export const Container = styled.div`
   align-items: center;
   padding-left: 12px;
   padding-right: 12px;
-  background-color: #2196f3;
+  background-color: ${props => props.theme.colors.backgroundColor};
 `;
